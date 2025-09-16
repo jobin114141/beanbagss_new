@@ -62,69 +62,89 @@
 
   <main class="main">
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+<!-- About Section -->
+<section id="about" class="about section" style="padding:0; margin:0;">
+  <div class="swiper init-swiper" style="width:100%; height:90vh; max-height:100vh; position: relative;">
+    <!-- Important: position relative -->
 
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2" data-aos="fade-up" data-aos-delay="400">
-            <div class="swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  },
-                  "breakpoints": {
-                    "320": {
-                      "slidesPerView": 1,
-                      "spaceBetween": 40
-                    },
-                    "1200": {
-                      "slidesPerView": 1,
-                      "spaceBetween": 1
-                    }
-                  }
-                }
-              </script>
-              <div class="swiper-wrapper">
-                <!-- <div class="swiper-slide">
-                  <img src="assets/img/img1.jpg" alt="Image" class="img-fluid">
-                </div> -->
-                <div class="swiper-slide">
-                  <img src="assets/img/img2.jpg" alt="Image" class="img-fluid">
-                </div>
-                <!-- <div class="swiper-slide">
-                  <img src="assets/img/img3.jpg" alt="Image" class="img-fluid">
-                </div> -->
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-          <div class="col-lg-4 order-lg-1">
-            <span class="section-subtitle" data-aos="fade-up">Welcome</span>
-            <h1 class="mb-4" data-aos="fade-up">
-              Elevate Your Space With The UAE's Leading No 1 Beanbag Experts
-            </h1>
-            <p data-aos="fade-up">
-              From chic lounges to cozy corners, our premium collection of beanbags is designed to transform any space
-              into a haven of relaxtion, whether for homes, offices, cafes, or lounges, we blend modern design with
-              ergonomic comfort to deliver the perfect seating solution.
-            </p>
-            <p class="mt-5" data-aos="fade-up">
-              <a href="about.html" class="btn btn-get-started">About Us</a>
-            </p>
-          </div>
-        </div>
+    <style>
+      /* Mobile override */
+      @media (max-width: 768px) {
+        #about .overlay-text h1,
+        #about .overlay-text h2 {
+          display: none !important; /* hide both on mobile */
+        }
+
+        #about .init-swiper {
+          height: 300px !important;
+        }
+      }
+
+      /* Centering text overlay */
+      #about .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(42, 41, 83);
+        z-index: 10;
+      }
+
+      #about .overlay-text h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      #about .overlay-text h2 {
+        font-size: 1.25rem;
+      }
+    </style>
+
+    <script type="application/json" class="swiper-config">
+      {
+        "loop": true,
+        "speed": 600,
+        "autoplay": {
+          "delay": 5000
+        },
+        "slidesPerView": "auto",
+        "pagination": {
+          "el": ".swiper-pagination",
+          "type": "bullets",
+          "clickable": true
+        },
+        "breakpoints": {
+          "320": {
+            "slidesPerView": 1,
+            "spaceBetween": 0
+          },
+          "1200": {
+            "slidesPerView": 1,
+            "spaceBetween": 0
+          }
+        }
+      }
+    </script>
+
+    <div class="swiper-wrapper" style="width:100%; height:100%;">
+      <!-- Text Overlay -->
+      <div class="overlay-text">
+        <h1>Elevate Your Space With The UAE's Leading No.1 Beanbag Experts</h1>
+        <h2>Comfort, Style, and Innovation in Every Beanbag</h2>
       </div>
-    </section><!-- /About Section -->
+
+      <!-- Image Slide -->
+      <div class="swiper-slide" style="width:100%; height:100%;">
+        <img src="assets/img/cover_image.png" alt="Cover Image"
+          style="width:100%; height:100%; object-fit: cover; display:block;">
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
 
 
 
