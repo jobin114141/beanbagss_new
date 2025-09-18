@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Team - Active Bootstrap Template</title>
+  <title>BeanBagss</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -29,13 +29,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Active
-  * Template URL: https://bootstrapmade.com/active-bootstrap-website-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body class="team-page">
@@ -46,7 +40,7 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Active.</h1>
+        <h1 class="sitename">BeanBagss.</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -68,18 +62,89 @@
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title light-background">
-      <div class="container">
-        <h1>category</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">category</li>
-          </ol>
-        </nav>
+
+
+    <!-- About Section -->
+<section id="about" class="about section" style="padding:0; margin:0;">
+  <div class="swiper init-swiper" style="width:100%; height:90vh; max-height:100vh; position: relative;">
+    <!-- Important: position relative -->
+
+    <style>
+      /* Mobile override */
+      @media (max-width: 768px) {
+        #about .overlay-text h1,
+        #about .overlay-text h2 {
+          display: none !important; /* hide both on mobile */
+        }
+
+        #about .init-swiper {
+          height: 300px !important;
+        }
+      }
+
+      /* Centering text overlay */
+      #about .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(42, 41, 83);
+        z-index: 10;
+      }
+
+      #about .overlay-text h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      #about .overlay-text h2 {
+        font-size: 1.25rem;
+      }
+    </style>
+
+    <script type="application/json" class="swiper-config">
+      {
+        "loop": true,
+        "speed": 600,
+        "autoplay": {
+          "delay": 5000
+        },
+        "slidesPerView": "auto",
+        "pagination": {
+          "el": ".swiper-pagination",
+          "type": "bullets",
+          "clickable": true
+        },
+        "breakpoints": {
+          "320": {
+            "slidesPerView": 1,
+            "spaceBetween": 0
+          },
+          "1200": {
+            "slidesPerView": 1,
+            "spaceBetween": 0
+          }
+        }
+      }
+    </script>
+
+
+      <!-- Text Overlay -->
+      <div class="overlay-text">
+             <h1 style="font-size:2rem; margin-bottom:1rem; color:#fff;">Elevate Your Space With The UAE's Leading No.1 Beanbag Experts</h1>
+         <h2 style="font-size:1.25rem; color:#fff;">Comfort, Style, and Innovation in Every Beanbag</h2>
       </div>
-    </div><!-- End Page Title -->
+
+      <!-- Image Slide -->
+      <div class="swiper-slide" style="width:100%; height:100%;">
+        <img src="assets/img/img44.png" alt="Cover Image"
+          style="width:100%; height:100%; object-fit: cover; display:block;">
+      </div>
+    </div>
+
+  </div>
+</section>
     <!-- Tabs Section -->
     <section id="tabs" class="tabs section light-background">
 
@@ -433,105 +498,157 @@
       </div>
     </section><!-- /Tabs Section -->
     <!-- Team Section -->
-    <section id="team" class="team section">
+       <!-- Pricing Section -->
+    <section id="pricing" class="pricing section light-background">
 
-      <div class="site-section slider-team-wrap">
-        <div class="container">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <p>Our Best Picks</p>
+        <h2>Explore Our Signature Beanbag Collection</h2>
+      </div><!-- End Section Title -->
 
-          <div class="slider-nav d-flex justify-content-end mb-3">
-            <a href="#" class="js-prev js-custom-prev"><i class="bi bi-arrow-left-short"></i></a>
-            <a href="#" class="js-next js-custom-next"><i class="bi bi-arrow-right-short"></i></a>
-          </div>
+      <div class="container">
 
-          <div class="swiper init-swiper" data-aos="fade-up" data-aos-delay="100">
-            <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": "1",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                },
-                "navigation": {
-                  "nextEl": ".js-custom-next",
-                  "prevEl": ".js-custom-prev"
-                },
-                "breakpoints": {
-                  "640": {
-                    "slidesPerView": 2,
-                    "spaceBetween": 30
-                  },
-                  "768": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 30
-                  },
-                  "1200": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 30
-                  }
-                }
-              }
-            </script>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="team">
-                  <div class="pic">
-                    <img src="assets/img/img25.png" alt="Image" class="img-fluid">
-                  </div>
-               
+        <div class="row gy-4">
 
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item recommended">
+              <div class="team">
+                <div class="pic">
+                  <img src="assets/img/img54.jpg" alt="Image" class="img-fluid">
                 </div>
+
+
               </div>
              
-             
-          
-
-
-              <div class="swiper-slide">
-                <div class="team">
-                  <div class="pic">
-                    <img src="assets/img/img29.jpg" alt="Image" class="img-fluid">
-                  </div>
-                
-
-                </div>
-              </div>
-
-
-               <div class="swiper-slide">
-                <div class="team">
-                  <div class="pic">
-                    <img src="assets/img/img30.jpg" alt="Image" class="img-fluid">
-                  </div>
-           
-
-                </div>
-              </div>
-
-
-               <div class="swiper-slide">
-                <div class="team">
-                  <div class="pic">
-                    <img src="assets/img/img31.png" alt="Image" class="img-fluid">
-                  </div>
-                
-
-
-                </div>
-              </div>
-              <!-- <div class="swiper-slide"></div> -->
             </div>
-          </div>
-        </div>
-        <!-- /.container -->
-      </div>
-    </section><!-- /Team Section -->
+          </div><!-- End Pricing Item -->
 
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-item recommended">
+              <span class="recommended-badge">Best Seller</span>
+              <div class="team">
+                <div class="pic">
+                  <img src="assets/img/img33.png" alt="Image" class="img-fluid">
+                </div>
+
+
+              </div>
+              
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-item recommended">
+              <div class="team">
+                <div class="pic">
+                  <img src="assets/img/img55.jpg" alt="Image" class="img-fluid">
+                </div>
+
+
+              </div>
+             
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+      <br>
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item recommended">
+              <div class="team">
+                <div class="pic">
+                  <img src="assets/img/img49.jpg" alt="Image" class="img-fluid">
+                </div>
+
+
+              </div>
+              
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-item recommended">
+                          
+              <div class="team">
+                <div class="pic">
+                  <img src="assets/img/img50.jpg" alt="Image" class="img-fluid">
+                </div>
+
+
+              </div>
+             
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-item recommended">
+              <div class="team">
+                <div class="pic">
+                  <img src="assets/img/img32.png" alt="Image" class="img-fluid">
+                </div>
+
+
+              </div>
+              
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+  <br>
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item recommended">
+              <div class="team">
+                <div class="pic">
+                  <img src="assets/img/img34.jpg" alt="Image" class="img-fluid">
+                </div>
+
+
+              </div>
+              
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-item recommended">
+
+              <div class="team">
+                <div class="pic">
+                  <img src="assets/img/img30.jpg" alt="Image" class="img-fluid">
+                </div>
+
+
+              </div>
+             
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-item recommended">
+              <div class="team">
+                <div class="pic">
+                  <img src="assets/img/img53.jpg" alt="Image" class="img-fluid">
+                </div>
+
+
+              </div>
+              
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+      </div>
+    </section><!-- /Pricing Section -->
   </main>
 
   <footer id="footer" class="footer light-background">
